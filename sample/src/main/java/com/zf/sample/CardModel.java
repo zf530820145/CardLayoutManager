@@ -1,12 +1,11 @@
 package com.zf.sample;
 
 public class CardModel {
-    public int logo;
     public int background;
     public String title;
 
-    public CardModel(String title, int background, int logo) {
-        this.logo=logo;
+    public CardModel(String title, int background) {
+
         this.background=background;
         this.title=title;
     }

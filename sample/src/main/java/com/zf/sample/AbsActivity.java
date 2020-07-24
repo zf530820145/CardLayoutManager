@@ -27,11 +27,11 @@ public class AbsActivity extends AppCompatActivity {
     }
 
     public void initData() {
-        data.add(new CardModel("omisego", R.drawable.omg_background, R.drawable.ic_omg));
-        data.add(new CardModel("NEM", R.drawable.nem_background, R.drawable.ic_nem));
-        data.add(new CardModel("Ethereum", R.drawable.ethereum_background, R.drawable.ic_ethereum));
-        data.add(new CardModel("Ripple", R.drawable.ripple_background, R.drawable.ic_ripple));
-        data.add(new CardModel("Bitcoin", R.drawable.bitcoin_background, R.drawable.ic_bitcoin));
+        data.add(new CardModel("Blue", R.drawable.bg_blue));
+        data.add(new CardModel("Yellow", R.drawable.bg_yellow));
+        data.add(new CardModel("Green", R.drawable.bg_green));
+        data.add(new CardModel("Purple", R.drawable.bg_purple));
+        data.add(new CardModel("Red", R.drawable.bg_red));
 
     }
 }
