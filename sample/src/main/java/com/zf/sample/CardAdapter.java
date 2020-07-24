@@ -42,28 +42,11 @@ public class CardAdapter extends RecyclerView.Adapter {
             @Override
             public void onClick(View v) {
                 if (data.size()-1>0&&holder.getLayoutPosition()==data.size()-1){
-               /*     notifyItemRemoved(data.size()-1);
-                    final CardModel remove = data.remove(data.size() - 1);
-                   new Handler().postDelayed(new Runnable() {
-                       @Override
-                       public void run() {
-                           data.add(0,remove);
-                           notifyDataSetChanged();
-                       }
-                   },250);*/
-
-               /*     Collections.rotate(data,1);*/
-/*
-                    notifyDataSetChanged();
-//               notifyItemChanged(data.size() - 1);*/
-
                     final ViewPropertyAnimator animation =   cardHolder.itemView.animate();
-
                     animation
                             .translationY(400)
                             .scaleX(0.8f)
                             .scaleY(0.6f)
-
                             .setDuration(250).setListener(new AnimatorListenerAdapter() {
                         @Override
                         public void onAnimationStart(Animator animator) {
@@ -73,9 +56,6 @@ public class CardAdapter extends RecyclerView.Adapter {
                         @Override
                         public void onAnimationCancel(Animator animator) {
 
-                            /*cardHolder.itemView.setScaleX(1f);
-                            cardHolder.itemView.setScaleY(1f);
-                            cardHolder.itemView.setTranslationY(0);*/
                         }
 
                         @Override
